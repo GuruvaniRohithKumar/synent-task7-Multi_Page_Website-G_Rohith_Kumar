@@ -55,6 +55,36 @@ The Spice Carnivore is a multi-page restaurant website designed to deliver a sea
 
 ---
 
+## 📸 Visual Preview
+
+### 🏠 Home Page
+![Home Page](home.png)
+
+### 🍽️ Menu Page
+![Menu Page](menu.png)
+
+### ⭐ Customer Reviews
+![Reviews Page](reviews.png)
+
+### 📅 Table Reservation
+![Reservation Page](reservation.png)
+
+### ℹ️ About Us
+![About Us](about.png)
+
+---
+
+## 🎥 Project Preview
+
+The Spice Carnivore is a modern restaurant website featuring:
+- 🍛 Interactive Food Menu
+- 📅 Table Reservation System
+- ⭐ Customer Reviews
+- 💳 Multiple Payment Options
+- 📱 Responsive Design
+- 🎨 Attractive User Interface
+
+
 ## 🎯 Key Functionalities
 
 - Responsive website design
