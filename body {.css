@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 40px;
+}
+
+.reservation-container {
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.reservation-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.reservation-form button {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.reservation-form button:hover {
+  background-color: #219150;
+}
+
+.conditional-input.hidden {
+  display: none;
+}
+
+.qr-image {
+  display: block;
+  margin: 15px auto;
+  width: 200px;
+  height: 200px;
+}
+
+.qr-note {
+  text-align: center;
+  color: #555;
+  font-size: 0.9em;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table Reservation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    details {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    summary {
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px dashed #ddd;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
+
+  <header>
+    <img src="https://static.vecteezy.com/system/resources/previews/032/329/536/non_2x/lion-head-logo-icon-lion-face-on-a-transparent-background-ai-generative-free-png.png" alt="Logo" class="logo">
+    <h1>The Spice Carnivore</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="Reservation.html">Booking Table</a>
+    <a href="about.html">About Us</a>
+  </nav>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="reservation-container">
+  <h2>Reserve a Table</h2>
+  <form class="reservation-form" onsubmit="return handleSubmit(event)">
+    
+    <label for="name">Full Name</label> 
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone Number</label> 
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+
+    <label for="date">Reservation Date</label> 
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time</label> 
+    <input type="time" id="time" name="time" required>
+
+    <label for="guests">Number of Guests</label> 
+    <input type="number" id="guests" name="guests" min="1" max="1000" required> 
+
+   <br> <br> <label for="payment">Payment Method</label> 
+    <select id="payment" name="payment" required onchange="showPaymentOption()">
+      <option value="">-- Select Payment Option --</option>
+      <option value="phonepe">PhonePe</option>
+      <option value="googlepay">Google Pay</option>
+      <option value="upi">UPI</option>
+      <option value="card">Debit/Credit Card</option>
+    </select>
+
+    <div id="upi-section" class="conditional-input hidden">
+    <br>  <label for="upi-id">Enter UPI ID</label> 
+      <input type="text" id="upi-id" name="upi-id" placeholder="yourname@upi">
+    </div>
+
+    <div id="card-section" class="conditional-input hidden">
+     <br> <label for="card-number">Card Number</label> 
+      <input type="text" id="card-number" name="card-number" placeholder="1234-5678-9012-3456">
+    </div>
+
+    <div id="qr-section" class="conditional-input hidden">
+     <br> <label>Scan QR Code to Pay</label> 
+      <img src="https://miro.medium.com/v2/resize:fit:789/1*A9YcoX1YxBUsTg7p-P6GBQ.png"width 40px; alt="QR Code for UPI" class="qr-image">
+      <p class="qr-note"><h3>Use your UPI app to scan and complete payment.</h3></p>
+    </div>
+
+    <button type="submit">Book Table</button>
+  </form>
+</div>
+
+<script>
+  function showPaymentOption() {
+    const paymentMethod = document.getElementById("payment").value;
+    document.getElementById("upi-section").classList.add("hidden");
+    document.getElementById("card-section").classList.add("hidden");
+    document.getElementById("qr-section").classList.add("hidden");
+
+    if (paymentMethod === "upi" || paymentMethod === "googlepay" || paymentMethod === "phonepe") {
+      document.getElementById("qr-section").classList.remove("hidden");
+      document.getElementById("upi-section").classList.remove("hidden");
+    } else if (paymentMethod === "card") {
+      document.getElementById("card-section").classList.remove("hidden");
+    }
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert("Reservation submitted! We'll contact you shortly.");
+    return false;
+  }
+</script>
+
+</body>
+</html>

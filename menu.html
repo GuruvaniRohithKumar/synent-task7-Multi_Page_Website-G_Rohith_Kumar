@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu | The Spice Carnivore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header>
+    <img src="https://static.vecteezy.com/system/resources/previews/032/329/536/non_2x/lion-head-logo-icon-lion-face-on-a-transparent-background-ai-generative-free-png.png" alt="Logo" class="logo">
+    <h1>The Spice Carnivore</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="p.html">Reviews</a>
+    <a href="Reservation.html">Booking Table</a>
+    <a href="about.html">About Us</a>
+  </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    details {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    summary {
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .menu-item {
+      padding: 5px 0;
+      border-bottom: 1px dashed #ddd;
+      cursor: pointer;
+    }
+
+    .menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .item-details {
+      display: none;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    .item-details img {
+      max-width: 200px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<details>
+  <summary>Biryani's</summary>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Chicken Biryani <br>
+    <span>₹220</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbFAGZnUgBwJ-q7kwN2OdhbUKqNfaZ09LTA&s" alt="Chicken Biryani">
+      <p>Aromatic rice with juicy chicken pieces and exotic spices.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Aromatic and flavorful, with tender mutton and perfectly cooked rice, a true delight for biryani lovers. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Mutton Biryani <br>
+    <span>₹320</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/mutton-hyderabadi-biryani-01.jpg" alt="Mutton Biryani">
+      <p>Tender mutton chunks cooked with fragrant basmati rice.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Aromatic and flavorful, with tender mutton and perfectly cooked rice, a true delight for biryani lovers. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Fish Biryani <br>
+    <span>₹300</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://onestophalal.com/cdn/shop/articles/fish_biryani-1701906057159_1200x.jpg?v=1701906108" alt="Fish Biryani">
+      <p>Delicious fish fillets layered in spiced biryani rice.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A delicious and fragrant seafood twist on a classic, the fish biryani offers a lighter, flavorful alternative to meat"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Chicken 65 Biryani <br>
+    <span>₹280</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKDtDYgOm0QG36d4OrNBPw0Njxt5MnaRfnA&s" alt="Chicken 65 Biryani">
+      <p>Classic Chicken 65 served over spicy biryani rice.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A delicious and fragrant seafood twist on a classic, the fish biryani offers a lighter, flavorful alternative to meat"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Chicken Fry piece Biryani <br>
+    <span>₹300</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.indianrecipeinfo.com/wp-content/uploads/2023/03/andhra-chicken-fry-piece-biryani-500x500.jpg" alt="Chicken Fry Piece Biryani">
+      <p>Fried chicken pieces with a flavorful biryani blend.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A delicious and satisfying chicken fry piece biryani, with perfectly cooked, flavorful chicken and aromatic rice. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Keema Biryani <br>
+    <span>₹450</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbYH00zdd_yP7EKJyEEtkh7n9KiD6blMI65g&s" alt="Keema Biryani">
+      <p>Minced mutton spiced and layered in rich biryani rice.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A delicious and flavorful one-pot dish where fragrant rice is infused with spiced minced meat. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Naatu kodi Biryani <br>
+    <span>₹350</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/bqq6zy32qs1omjryrg9u" alt="Naatu Kodi Biryani">
+      <p>Country chicken biryani with authentic regional flavors.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Natu Kodi Biryani offers a robust, spicy, and intensely flavorful experience, showcasing the rich taste"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Nalli Ghosh Biryani <br>
+    <span>₹450</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzDo70pzSEAR8i9GZAbDDNHvMghJGy0rl0w&s" alt="Nalli Ghosh Biryani">
+      <p>Juicy lamb shank biryani slow-cooked to perfection.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Aromatic, flavorful, and incredibly tender, this biryani features succulent lamb shanks that melt in your mouth"</em>
+  </div>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Starters</summary>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Chicken Lollipop <br>
+    <span>₹150</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl1rXpnOyjSXpx5K6_ttGFMgG-7-Tx-InzTQ&s" alt="Chicken Lollipop">
+      <p>Crunchy chicken drumettes tossed in spicy sauce.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Crispy, flavorful, and a fun, messy way to enjoy chicken."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Chicken Tikka <br>
+    <span>₹250</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.whiskaffair.com/wp-content/uploads/2020/06/Chicken-Tikka-2-3.jpg" alt="Chicken Tikka">
+      <p>Marinated chicken grilled in traditional tandoor.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Tender, smoky, and flavorful, Chicken Tikka is a delightful appetizer"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Mutton Liver Fry <br>
+    <span>₹400</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://gkfooddiary.com/wp-content/uploads/2017/11/Mutton-Liver-Masala-Recipe-for-toddlers.jpg" alt="Mutton Liver Fry">
+      <p>Spicy stir-fried mutton liver with onions and masala.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A flavorful and slightly chewy dish, best enjoyed with a spicy kick and fresh coriander. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Chicken Wings <br>
+    <span>₹350</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.lifeisbutadish.com/wp-content/uploads/2016/01/Crispy-Baked-Chicken-Wings-9.jpg" alt="Chicken Wings">
+      <p>Crispy chicken wings glazed with BBQ sauce.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Crispy, saucy, and endlessly satisfying, chicken wings are a perfect blend of savory, messy, and delicious."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Mutton Keema Balls <br>
+    <span>₹350</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRizUCr1DpK5M28W38TuY1pzQod_xxQfjrS0Q&s" alt="Mutton Keema Balls">
+      <p>Deep-fried spicy mutton keema dumplings.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"These spicy, crispy meatballs are a beloved dish from Tamil Nadu's Chettinad cuisine"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Chicken Drum Sticks <br>
+    <span>₹220</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvGJvm-dJnct6ssNKS6XN1UBX4zdB705JZWg&s" alt="Chicken Drum Sticks">
+      <p>Flavor-packed chicken legs cooked with secret spices.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Drumstick pods have a grassy and vegetal flavor combined with sweet and bitter undertones."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Fish Tikka <br>
+    <span>₹450</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6r32NeK5aRh3FNvHUn5Mm3yE4cF1Lz0vkSQ&s" alt="Fish Tikka">
+      <p>Marinated fish fillets grilled in tandoor.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Each piece of fish was so beautifully cooked and tastes amazing. They were spicy, tangy, flaky and just melts in your mouth."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Fish Fry <br>
+    <span>₹350</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_jkRBlV-TQjXn56fggbgbgi4_j9H2kNmcQ&s" alt="Fish Fry">
+      <p>Pan-fried fish with crispy crust and soft interior.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A perfectly crispy and flavorful fish fry, with a golden-brown exterior giving way to tender"</em>
+  </div>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Roti's</summary>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Rumali Roti <br>
+    <span>₹50</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJpcgtV7e95sJKHzdkeBRu9mBUPvoSfBm4w&s" alt="Rumali Roti">
+      <p>Soft, thin roti served hot and folded like a handkerchief.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"light, foldable structure made it the perfect bread to mop up luxurious gravies"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Tandoori Roti <br>
+    <span>₹75</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.cookwithmanali.com/wp-content/uploads/2021/07/Tandoori-Roti-500x500.jpg" alt="Tandoori Roti">
+      <p>Whole wheat flatbread baked in a tandoor oven.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Tandoori roti is a delicious, slightly smoky, and chewy flatbread, perfect with curries and other Indian dishes. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Butter Naan <br>
+    <span>₹80</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlRziu5Do-YEMWlPXWEPXbzGkNekt7yYsuuw&s" alt="Butter Naan">
+      <p>Soft leavened bread coated with melting butter.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Soft, fluffy, and buttery, butter naan is a delicious Indian flatbread perfect for scooping up flavorful curries. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Paratha <br>
+    <span>₹60</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyIfow0VJn76w4T5V7BwJALZm-52npGlWzA&s" alt="Parata">
+      <p>Layered flatbread pan-fried until golden and crispy.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A delicious, versatile flatbread, perfect for any meal and customizable with a wide array of fillings. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Plain Naan <br>
+    <span>₹50</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2025/05/naan-3-500x500.jpg" alt="Plain Naan">
+      <p>Simple and soft naan to pair with curries and gravies.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Plain naan is a soft, slightly chewy flatbread with a mild, slightly milky flavor"</em>
+  </div>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Deserts</summary>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Gulab Jamun <br>
+    <span>₹80</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://i0.wp.com/www.chitrasfoodbook.com/wp-content/uploads/2016/10/gulab-jamun-using-mix.jpg?w=1200&ssl=1" alt="Gulab Jamun">
+      <p>Milk-based sweet dumplings in sugar syrup.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"a delightful, sweet, and spongy Indian dessert, soaked in fragrant rose-flavored syrup"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Rasmalai <br>
+    <span>₹50</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKRN8_L8bzbrsJNA3ksQpgMMD8ynTG6aUnQ&s" alt="Rasmalai">
+      <p>Soft cheese patties soaked in saffron-flavored milk.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Rasmalai is a delicious, rich, and sweet Indian dessert consisting of soft cheese patties soaked in thickened"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Jilebi <br>
+    <span>₹60</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_400/vwiqqfo5jpsjxv6bthay" alt="Jilebi">
+      <p>Crispy golden coils soaked in sugar syrup.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A sugary, crispy, and somewhat greasy Indian dessert that's best enjoyed in moderation. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Double ka meeta <br>
+    <span>₹90</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.whiskaffair.com/wp-content/uploads/2018/08/Double-ka-Meetha-2-1.jpg" alt="Double ka meeta">
+      <p>Hyderabadi dessert made with fried bread in milk and sugar.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Double ka Meetha is a royal Mughlai delicacy of golden fried bread simmered in an aromatic creamy and rich thickened milk."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Khubani ka meeta <br>
+    <span>₹100</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/12/khubani-ka-meetha-1a.jpg" alt="Kurbani ka meeta">
+      <p>Apricot dessert served with fresh cream.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"one of the first desserts I truly fell in love with in India"</em>
+  </div>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Drinks</summary>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Lemon Soda <br>
+    <span>₹25</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://bakesbybrownsugar.com/wp-content/uploads/2023/01/Lemon-Soda-15C.jpg" alt="Lemon Soda">
+      <p>Chilled soda with lemon and salt for refreshment.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>" A refreshing, fizzy drink with a zesty lemon flavor, perfect for quenching thirst on a hot day."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Lassi <br>
+    <span>₹30</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5OyAuhkME31DtqtLvyIK6T2HbmUMpNTU9Q&s" alt="Lassi">
+      <p>Sweet and chilled yogurt drink with a creamy finish.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Lassi is a refreshing and delicious yogurt-based drink, perfect for cooling down on a warm day."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>ButterMilk <br>
+    <span>₹30</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSucw6REVCvM3tV28aerY2ZMIQ4ov3mA9kQw&s" alt="ButterMilk">
+      <p>Spiced buttermilk to cool down your taste buds.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"refreshing and tangy dairy drink, perfect for hydration and digestion, especially during hot weather. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Jeera Soda <br>
+    <span>₹30</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9a_SDrbElkb2lv06I7rXkkhynu-aV7xBaQ&s" alt="Jeera Soda">
+      <p>Fizzy soda infused with cumin and lemon.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"A refreshing and zesty Indian beverage, perfect for quenching thirst and aiding digestion. "</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Maaza <br>
+    <span>₹25</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5YBkxP5Lacx2gbGFRXofDgfgZBvOhPIyrWw&s" alt="Maaza">
+      <p>Mango fruit drink – sweet, smooth, and tropical.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>" Maaza is one of the product that comes to my mind when it is about fruit juices.it has this awesome mango flavor."</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Budwiser (Non-Alcoholic) <br>
+    <span>₹90</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROywvlaQybrC5WJO3TWuTdK9DtbBi9ZFS2Ig&s" alt="Budwiser">
+      <p>Chilled non-alcoholic beer with crisp taste.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"Budweiser is a light, crisp, and refreshing American-style lager, known for its balanced flavor and clean finish"</em>
+  </div>
+    </div>
+  </div>
+  <div class="menu-item" onclick="toggleDetails(this)">
+    <div class="menu-header"><div>Water Bottle <br>
+    <span>₹30</span>
+  </div>
+  </div>
+    <div class="item-details">
+      <img src="https://5.imimg.com/data5/IQ/VW/QS/SELLER-38463946/mineral-water-for-restaurant.jpg" alt="Water Bottle">
+      <p>Packed drinking water – essential and pure.</p>
+      <div class="review">
+    ⭐⭐⭐⭐☆ <br>
+    <em>"More purified and good qality water!"</em>
+  </div>
+    </div>
+  </div>
+</details>
+
+<footer>Each item takes approximately 20 minutes to prepare</footer>
+
+<script>
+  function toggleDetails(el) {
+    const details = el.querySelector('.item-details');
+    const isVisible = details.style.display === 'block';
+    // Close all others
+    document.querySelectorAll('.item-details').forEach(d => d.style.display = 'none');
+    details.style.display = isVisible ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
